@@ -5,10 +5,13 @@ function validaragenda(idNome, idemail, idtelefone) {
     let telefone = document.getElementById(idtelefone).value;
 
     if (nome == "")
-        alert("Nome do produto não pode estar em branco. Favor preenchê-lo!");
-    else if (codigo == "")
-        alert("Código do produto não pode estar em branco. Favor preenchê-lo!");
+        alert("Nome da pessoa não pode estar em branco. Favor preenchê-lo!");
+    else if (email == "")
+        alert("email da pessoa não pode estar em branco. Favor preenchê-lo!");
+    else if (telefone == "")
+        alert("telefone da pessoa não pode estar em branco. Favor preenchê-lo!");
     else cadastrarProduto(nome, email, parseInt(telefone));
+}
 }
 
 function cadastraragenda(nome, email, telefone) {
@@ -16,11 +19,11 @@ function cadastraragenda(nome, email, telefone) {
 
     if (typeof(Storage) !== "undefined") {
         let agendas = localStorage.getItem("agendas");
-        if (agendas == null) agendas = []; // Nenhum produto ainda foi cadastrado
+        if (agendas == null) agendas = []; // Nenhum pessoa ainda foi cadastrado
         else agendas = JSON.parse(agendas);
-        agendas.push(novoagendas); // Adiciona um novo produto
+        agendas.push(novoagendas); // Adiciona um nova  agenda
         localStorage.setItem("agendas",JSON.stringify(agendas))
-        alert("Foram cadastradas com sucesso "+qtidade+" unidades do produto "+ produto+"!");
+        alert("Foram cadastradas com sucesso");
         atualizarTotalEstoque("totalagendas");
         location.reload();
     } 
