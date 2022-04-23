@@ -59,7 +59,7 @@ function listaragendas() {
                 
                 document.write("<h2>Nome: "+agenda.nome+"</h2>");
                 document.write("<h2>email: "+agenda.email+"</h2>");
-                document.write("<h2>Quantidade no estoque: "+agenda.telefone+"</h2>");
+                document.write("<h2>telefone: "+agenda.telefone+"</h2>");
                 document.write('<a href="index.html"+>Go Back</a>');
                 
             });
