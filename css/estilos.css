@@ -1,0 +1,64 @@
+body{
+background-color: rosybrown;
+
+}
+
+
+.alinharRotulos {
+    text-align: right;
+}
+.alinhaBtns {
+    width:30%;
+    background-color: black;
+    color:white;
+    border:0px;
+    padding:5px;
+    border-radius: 5px;
+    cursor: pointer;
+   
+}
+.agendas{
+    width:300px; 
+    float:right;
+    border-style: dashed;
+    size: 10px;
+    background-color: blueviolet;
+    color: white;
+}
+.agendas p {
+    display: inline;
+}
+table {
+    clear:both; 
+    background-color: blue black blue;
+    border-radius: 32px; 
+    color:white;
+    padding:30px;
+    width:480px;
+    height: 125px;
+    margin:auto;
+    border-style: dashed;
+    size: 10px;
+    background-color: burlywood;
+    color: white;
+}
+caption {
+    color: bisque ; 
+    font-weight: bold; 
+    font-size: 25px;
+}
+td{
+    color: green ;
+   
+}
+td:hover{
+    color: chartreuse ;
+}
+input:hover{
+    color: blue ;
+}
+input:active{
+    color: aquamarine ;
+}
+
+

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" type="image/x-icon" href="img/agenda.ico">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/funcoes.js"></script>
+
+    <title>cradastro de agenda</title>
+</head>
+<body onload="carregarTotalEstoque('totalEstoque')">
+    
+    <!--Agendas-->
+    <div class="agendas">
+        <img src="img/agenda.png">
+        <p>numeros cradastros de agendas: <span id="totalagenda">0</span></p>
+    </div>
+    
+    <!--Formulário: Nome, email telefone-->
+    <form>
+        <table>
+            <caption>Cadastro de nova agendas</caption>
+            <!--Nome-->
+            <tr>
+                <td class="alinharRotulos">Nome:</td>
+                <td><input id="Nome" type="text"></td>
+            </tr>
+            <!--email-->
+            <tr>
+                <td class="alinharRotulos">Email:</td>
+                <td><input id="email" type="email"></td>
+            </tr>
+            <!--telefone-->
+            <tr>
+                <td class="alinharRotulos">telefone:</td>
+                <td><input id="telefone" type="text"></td>
+                </td>
+            </tr>
+            <!--Botoes-->
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="button" value="Cadastrar" class="alinhaBtns" onclick="validarProduto('Nome','email','telefone')">
+                    <input type="button" value="Ver agendas" class="alinhaBtns" onclick="window.open('verEstoque.html','_self')">
+                    <input type="reset" value="Limpar" class="alinhaBtns">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+
+</html>
